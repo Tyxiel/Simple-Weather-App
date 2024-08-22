@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="lft">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://openweathermap.org/img/wn/02d.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://openweathermap.org/img/wn/02d.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Previsão do Tempo</title>
+    <meta name="description" content="Aplicativo simples de prevsão do tempo" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="dark-theme-button">
+      <button onclick="toggleDarkMode()" class="bx bxs-moon"></button>
+    </div>
+    <div class="content-wrapper">
+      <header class="search-bar">
+        <i class="bx bxs-map"></i>
+        <input
+          required
+          type="search"
+          name="search"
+          id="search-text"
+          class="search-text"
+          placeholder="Insira sua localização"
+        />
+        <button class="bx bx-search" onclick="weatherSearch()"></button>
+      </header>
+      <main>
+        <div class="main-weather-wrapper">
+          <div class="title-wrapper">
+            <h1 class="city">São paulo, SP</h1>
+            <p class="description">Predominantemente nublado</p>
+          </div>
+          <div class="temperature">
+            <img
+              src="https://openweathermap.org/img/wn/02d.png"
+              alt="Sol entre nuvens"
+            />
+            <h1 class="main-temp">27°</h1>
+            <div class="vr"></div>
+            <div class="sub-temperature">
+              <p class="max-temp">29°</p>
+              <p class="min-temp">24°</p>
+            </div>
+          </div>
+        </div>
+        <!-- Sensação Térmica -->
+        <p class="real-temp"></p>
+        <div class="info-icons">
+          <div class="humidity">
+            <i class="bx bx-water"></i>
+            <p>62%</p>
+          </div>
+          <div class="wind">
+            <i class="bx bx-wind"></i>
+            <p>6.7 m/s</p>
+          </div>
+          <div class="visibility">
+            <i class="bx bx-low-vision"></i>
+            <p>5km</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
