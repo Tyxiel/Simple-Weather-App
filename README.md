@@ -42,3 +42,7 @@ Este projeto é uma aplicação de previsão do tempo desenvolvida com HTML, CSS
 6.  Digite o nome de uma cidade na barra de pesquisa e clique no ícone de busca.
 
 Ou acesse a demonstração online: [Simple Weather App](https://tyxiel.github.io/Simple-Weather-App/)
+
+## Licença
+
+Este projeto é licenciado sob a **GNU Affero General Public License v3.0**.
